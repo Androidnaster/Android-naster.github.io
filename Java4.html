@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+
+
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+<style>
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: teal;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+h1,h2,h3,h4,p{
+	text-align:center;
+}
+a{
+	color:black;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="Home.html">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">More stuff</a>
+    <div class="dropdown-content" id="myDropdown">
+     
+      <a href="Java3.html">Java basics</a>
+      <a href="Java.html">Java Introduction </a>
+     <a href="index.html">Python tutorial</a>
+    </div>
+  </li>
+</ul>
+<hr>
+<h1>Welcome to Pynaster </h1>
+<hr>
+
+<p>In this edition of pynaster 
+we are going to discuss Java's
+ Data Structures</p>
+
+<h3>Data structures</h3>
+ <p> The data structures
+  provided by the Java
+   utility package are 
+   very powerful and 
+   perform a wide range of 
+   functions. These data
+    structures consist of 
+    the following interface
+    and classes −
+</p>
+
+<h4>Enumeration</h4>
+<p>The Enumeration interface defines a means to retrieve successive elements from a data structure.
+</p>
+<p>For example, Enumeration defines a method called nextElement that is used to get the next element in a data structure that contains multiple elements.
+</p>
+<h4>BitSet</h4>
+<p>This class is very useful in cases where you need to keep up with a set of Boolean values; you just assign a bit to each value and set or clear it as appropriate.
+</p>
+<h4>Vector</h4>
+<p>The Vector class is similar to a traditional Java array, except that it can grow as necessary to accommodate new elements.
+</p>
+<p>The nice thing about using the Vector class is that you don't have to worry about setting it to a specific size upon creation; it shrinks and grows automatically when necessary.
+</l>
+<h4>Stack</h4>
+<p>You can think of a stack literally as a vertical stack of objects; when you add a new element, it gets stacked on top of the others.
+</p>
+<h4>Dictionary</h4>
+<p>The Dictionary class is an abstract class that defines a data structure for mapping keys to values.
+</p>
+<p>This is useful in cases where you want to be able to access data via a particular key rather than an integer index.
+</p>
+<h4>Hashtable</h4>
+<p>The Hashtable class provides a means of organizing data based on some user-defined key structure.
+</p>
+<h4>Properties</h4>
+<p>Properties is a subclass of Hashtable. It is used to maintain lists of values in which the key is a String and the value is also a String.
+</p>
+<p>The Properties class is used by many other Java classes. For example, it is the type of object returned by System.getProperties( ) when obtaining environmental values.
+</p>
+
+<footer>
+<i>This edition on data types end here</i>
+<i>If you liked what you learnt <b>donate</b> a dollar to our PayPal email.edwinnoko20@gmail.com</i>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
