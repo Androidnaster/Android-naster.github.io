@@ -1,0 +1,206 @@
+<html>
+  <head>
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: teal;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+h1,h2,h3,h4,p{
+	text-align:center;
+}
+a{
+	color:black;
+}
+
+   </style>
+   </head>
+   <body>
+
+<ul>
+  <li><a class="active" href="Home.html">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">More stuff</a>
+    <div class="dropdown-content" id="myDropdown">
+    
+      <a href="Java.html">Java Introduction</a>
+      <a href="Java2.html">Java Data types </a>
+     <a href ="index.html">Go to our Python tutorial</a>
+    </div>
+  </li>
+</ul>
+<h1>Welcome to pynaster </h2>
+<p>In this edition of pynaster,we are going 
+to further discuss the basics of Java Programming</p>
+<p>If you don't know anything about Java,I suggest you visit this <a href="Java.html">page </a>
+<h3>We will discuss "Number Classes"</h3>
+
+
+<p>When we work with Numbers,
+ we use primitive data types
+  such as byte, int, long,
+   double, etc.</p>
+   
+   
+   <h3>Example</h3>
+   <hr>
+   <code>
+  <div> int i = 5000;</div>
+  <div> float gpa = 13.65;</div>
+   <div> double mask = 0xaf;</div>
+   <hr></hr>
+    
+   </code>
+
+<p>However, in development, 
+   we come across situations
+    where we need to use objects
+     instead of primitive data
+      types. In order to achieve
+       this, Java provides<b> <i>wrapper
+
+classes</i></b>.</p>
+
+<p>All the wrapper classes
+ (Integer, Long, Byte, Double, Float, Short) 
+ are subclasses 
+of the abstract class Number.</p>
+
+<p> The object of the wrapper class 
+contains or wraps its respective
+ primitive data type. 
+ Converting primitive data types into
+  object is called boxing, 
+  and this is taken care by the 
+  compiler. Therefore, while using
+   a wrapper class you just need 
+   to pass the value of the primitive
+    data type to the constructor 
+    of the Wrapper class.
+
+And the Wrapper object will be 
+converted back to a primitive data 
+type, and this process is called 
+unboxing. The Number class is 
+part of the java.lang package.
+</p>
+<h4>
+Following is an example
+ of boxing and unboxing 
+</h4>
+<hr>
+<code>
+
+
+<div>public class Test { </div>
+	public static void main(String args[])
+	<div> { Integer x = 5; <div>
+<div> x = x + 10;</div>
+  <div> System.out.println(x);</div>
+ </div>}<div>
+  }
+
+</code>
+<hr>
+<p>Output</p>
+<code>
+15
+</code>
+
+<p>When x is assigned an integer
+ value, the compiler boxes the
+  integer because x is integer 
+  object. Later, x is unboxed so
+   that they can be added as an
+    integer.
+</p>
+
+
+<footer>
+<i>This edition on data types end here</i>
+<i>If you liked what you learnt <b>donate</b> a dollar to our PayPal email.edwinnoko20@gmail.com</i>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+    </body>
